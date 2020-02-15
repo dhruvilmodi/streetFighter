@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Street Fighter</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="displayMessages">
+        <section id="welcome"><br><br><br><br><br>Welcome to the GAME!<button class="ok" onclick="window.location.reload()">OK</button></section>
+        <section id="secretMessageForJihaan"><button class="jihaanButton" onclick="window.location.reload()">Close</button></section>
+        <section id="ryu" class="mobileSecret">Use your Own Name please!<br><button class="ok" onclick="window.location.reload()">OK</button></section>
+        <!-- <section id="akuma" class="mobileSecret">Use your Own Name please!<br><button class="ok" onclick="window.location.reload()">OK</button></section> -->
+        <!-- <section id="alex" class="mobileSecret">Use your Own Name please!<br><button class="ok" onclick="window.location.reload()">OK</button></section> -->
+    </section>
+
+    <main class="container">
+
+        <h1>Street Fighter</h1>
+
+        <form action="#">
+            <!-- first name -->
+            <section class="cell">
+                <label class="col-30" for="fname">First Name</label>
+                <input type="text" id="firstName" name="fname" placeholder="Your first name.."><br>
+            </section>
+            <!-- error message -->
+            <p id="firstNameError"></p>
+
+            <!-- last name -->
+            <section class="cell">
+                <label class="col-30" for="lname">Last Name</label>
+                <input type="text" id="lastName" name="lname" placeholder="Your last name..">
+            </section>
+            <!-- error message -->
+            <p id="lastNameError"></p>
+
+            <!-- Gender -->
+            <section class="cell">
+                <label class="col-66" for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="select">Select</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+                
+                <!-- Age -->
+                <label id="ageLabel" for="age">Age</label>
+                <input type="text" id="age" name="age" placeholder="i.e., 23">
+                
+            </section>
+            <!-- error message -->
+            <p id="genderError"></p>
+            <p id="ageError"></p>
+            
+            <!-- username -->
+            <section class="cell">
+                <label class="col-30" for="userName">Username</label>
+                <input type="text" id="userName" name="userName" placeholder="Username here...">
+            </section>
+            <!-- error message -->
+            <p id="userNameError"></p>
+
+            <!-- create password -->
+            <section class="cell">
+                <label class="col-30" for="createPassword">Create Password</label>
+                <input type="password" name="createPassword" id="createPassword" placeholder="Create Password...">
+            </section>
+            <!-- error message -->
+            <p id="createPasswordError"></p>
+
+            <!-- confirm password -->
+            <section class="cell">
+                <label class="col-30" for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password...">
+            </section>
+            <!-- error message -->
+            <p id="confirmPasswordError"></p>
+
+            <!-- submit button -->
+            <section class="row" id="submitDiv">
+                <input type="submit" value="Sign Up" id="formSubmit">
+            </section>
+
+        </form>
+    </main>
+    <!-- audio links -->
+    <audio src="./audio/birthday.mp3" id="birthdayAudio"></audio>
+    <audio src="./audio/hold.mp3" id="hold"></audio>
+    <!-- link to js file -->
+    <script src="script.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</body>
+</html>
