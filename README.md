@@ -3,7 +3,13 @@ Regex (Regular Expressions) example and with some secret actions hidden inside. 
 
 - Special Appearance: My Nephew as his birthday was near by at the time of development
 
-# Secret Actions:
+# Secret Actions
 
 - First Name: Jihaan (any case)
 - First Name(any one of them): akuma, alex, balrog, birdie, bison, cammy, chunli, dhalsim, fang, guile, ibuki, juri, karin, ken, kolin, laura, mika, nash, necalli, rashid, ryu, urien, vega, zangief
+
+# Technologies
+- ECMAScript 5
+- npm lite-server
+- Regex
+- GSAP
