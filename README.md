@@ -12,4 +12,4 @@ Regex (Regular Expressions) example and with some secret actions hidden inside. 
 - ECMAScript 5
 - npm lite-server
 - Regex
-- GSAP
+- GSAP 3.0
